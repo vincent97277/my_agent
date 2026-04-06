@@ -1,53 +1,30 @@
-# my_agent
+# My Agent Learning Repo
 
-A minimal Google ADK agent project written in Go.
+This repository is a learning workspace for building agents with Google ADK in Go.
 
-## What this project does
+## Framework and Environment
 
-- Creates a Gemini model client.
-- Builds a single `llmagent`.
-- Enables the built-in `google_search` tool.
-- Starts the ADK launcher (console/web modes).
+- Go `1.25.7`
+- `google.golang.org/adk` for agent orchestration
+- `google.golang.org/genai` for Gemini access
+- Gemini API key via `GOOGLE_API_KEY`
+- Local launch modes through ADK launcher: console, REST API, and Web UI
 
-## Prerequisites
+## Purpose
 
-- Go `1.25.7` or compatible
-- A valid `GOOGLE_API_KEY`
+- Learn the core ADK concepts in Go
+- Keep each exercise isolated by topic
+- Turn small experiments into reusable agent examples
 
-## Setup
+## MOC
 
-```bash
-go mod tidy
-export GOOGLE_API_KEY="<your_api_key>"
-```
+MOC here means Map of Content: the top-level guide for this repo.
 
-## Run
+1. [quick-start](quick-start/README.md): the first minimal ADK Go agent, including `llmagent`, Gemini model setup, and `web api webui` launch flow.
 
-Run in default mode:
+## Next Topics
 
-```bash
-go run .
-```
-
-Run in console mode:
-
-```bash
-go run . console
-```
-
-Run in web mode:
-
-```bash
-go run . web
-```
-
-If startup fails, check:
-
-- `GOOGLE_API_KEY` is set in your shell
-- network access to Google APIs is available
-
-## Project files
-
-- `agent.go`: app entrypoint and agent configuration
-- `go.mod` / `go.sum`: dependencies
-- `.gitignore`: basic Go and env ignore rules
+- Custom Go tools
+- Multi-agent composition
+- Session and memory handling
+- Production-oriented API and deployment patterns

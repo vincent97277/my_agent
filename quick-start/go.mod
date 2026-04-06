@@ -1,4 +1,4 @@
-module my_agent/main
+module my_agent/quick_start
 
 go 1.25.7
 
