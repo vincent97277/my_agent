@@ -6,10 +6,18 @@ See the repo-level MOC in [`../README.md`](../README.md).
 
 ## What this exercise does
 
-- Creates a Gemini model client.
-- Builds a single `llmagent`.
-- Enables the built-in `google_search` tool.
-- Starts the ADK launcher in console or web mode.
+- Creates a Gemini model client with `gemini-2.5-flash`
+- Builds a single `llmagent`
+- Enables the built-in `google_search` tool
+- Starts the ADK launcher in console or web mode
+
+## Module
+
+This directory is an independent Go module:
+
+```go
+module github.com/vincent97277/adk-go-lab/quick-start
+```
 
 ## Prerequisites
 
@@ -26,23 +34,27 @@ go mod tidy
 export GOOGLE_API_KEY="<your_api_key>"
 ```
 
+You can also use the example file:
+
+```bash
+source .example.env
+```
+
 ## Run
+
+From the repo root:
+
+```bash
+go -C quick-start run .
+go -C quick-start run . console
+go -C quick-start run . web api webui
+```
 
 From `quick-start/`:
 
 ```bash
 go run .
-```
-
-Console mode:
-
-```bash
 go run . console
-```
-
-Web mode with API and Web UI:
-
-```bash
 go run . web api webui
 ```
 

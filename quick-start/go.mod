@@ -1,4 +1,4 @@
-module my_agent/quick_start
+module github.com/vincent97277/adk-go-lab/quick-start
 
 go 1.25.7
 

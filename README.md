@@ -1,4 +1,4 @@
-# My Agent Learning Repo
+# ADK Go Lab
 
 This repository is a learning workspace for building agents with Google ADK in Go.
 
@@ -20,7 +20,13 @@ This repository is a learning workspace for building agents with Google ADK in G
 
 MOC here means Map of Content: the top-level guide for this repo.
 
-1. [quick-start](quick-start/README.md): the first minimal ADK Go agent, including `llmagent`, Gemini model setup, and `web api webui` launch flow.
+1. [quick-start](quick-start/README.md): a minimal ADK Go agent using Gemini, `llmagent`, and `web api webui`.
+
+## Current Structure
+
+- `quick-start/`: the first runnable exercise
+- `.gitignore`: shared ignore rules for the repo
+- `.env`: local environment variables for development
 
 ## Next Topics
 
